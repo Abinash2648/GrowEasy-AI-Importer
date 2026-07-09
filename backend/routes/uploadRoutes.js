@@ -1,4 +1,4 @@
-/*const express = require("express");
+const express = require("express");
 
 const router = express.Router();
 
@@ -15,22 +15,3 @@ router.post(
 );
 
 module.exports = router; 
-*/
-const express = require("express");
-const router = express.Router();
-
-router.get("/test", (req, res) => {
-  res.json({
-    success: true,
-    message: "Route is working"
-  });
-});
-
-router.post("/upload", (req, res) => {
-  res.json({
-    success: true,
-    message: "Upload route reached"
-  });
-});
-
-module.exports = router;
